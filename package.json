@@ -1,0 +1,28 @@
+{
+  "name": "alioss-uploader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "au": "index.js"
+  },
+  "scripts": {
+    "test": "au upload ./node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DWJZ/alioss-uploader.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DWJZ/alioss-uploader/issues"
+  },
+  "homepage": "https://github.com/DWJZ/alioss-uploader#readme",
+  "dependencies": {
+    "ali-oss": "^6.15.2",
+    "commander": "^8.0.0",
+    "dotenv": "^10.0.0"
+  }
+}
