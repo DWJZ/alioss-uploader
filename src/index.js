@@ -70,7 +70,8 @@ async function start(dirPath, envPath) {
     let progress = 0
     await Promise.all(
       files.map(async file_path => {
-        const name = file_path.replace(DIST_DIR + path.sep, '')
+        file_path=file_path.replace(/\\/g,'/')
+        const name = file_path.replace(DIST_DIR.replace(/\\/g,'/') + '/', '')
         await client.put(name, file_path)
         progress += progress_per_file
         log(`=========== 已完成${progress}% ===========`)
